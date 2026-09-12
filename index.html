@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SkillTrack Maharashtra</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <div class="logo-icon">ST</div>
+
+            <div>
+                <h2>SkillTrack</h2>
+                <span>Maharashtra</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#features">Features</a>
+            <a href="#impact">Impact</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="login-btn" onclick="showLogin()">
+            Login
+        </button>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <div class="badge">
+                🚀 Smart India Hackathon 2026
+            </div>
+
+            <h1>
+                Connecting
+                <span>Skills</span>
+                to
+                <span>Employment</span>
+            </h1>
+
+            <p>
+                An intelligent platform to track skilling outcomes,
+                identify skill gaps and measure the real impact of
+                skill development initiatives.
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn" onclick="startTracking()">
+                    Start Tracking →
+                </button>
+
+                <button class="secondary-btn" onclick="learnMore()">
+                    Explore Platform
+                </button>
+
+            </div>
+
+            <div class="hero-info">
+
+                <div>
+                    <strong>52K+</strong>
+                    <span>Trainees</span>
+                </div>
+
+                <div>
+                    <strong>29K+</strong>
+                    <span>Employed</span>
+                </div>
+
+                <div>
+                    <strong>80+</strong>
+                    <span>Skill Programs</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- DASHBOARD PREVIEW -->
+
+        <div class="dashboard-preview">
+
+            <div class="preview-header">
+
+                <div>
+                    <small>Government Dashboard</small>
+                    <h3>Skill & Employment Overview</h3>
+                </div>
+
+                <div class="online">
+                    ● Live
+                </div>
+
+            </div>
+
+
+            <div class="preview-cards">
+
+                <div class="preview-card">
+                    <span>Total Trainees</span>
+                    <strong>52,430</strong>
+                    <small class="green">↑ 12.4%</small>
+                </div>
+
+                <div class="preview-card">
+                    <span>Employment Rate</span>
+                    <strong>71.8%</strong>
+                    <small class="green">↑ 8.2%</small>
+                </div>
+
+                <div class="preview-card">
+                    <span>Average Salary</span>
+                    <strong>₹18.7K</strong>
+                    <small class="green">↑ 6.5%</small>
+                </div>
+
+                <div class="preview-card">
+                    <span>Skill Gaps</span>
+                    <strong>24</strong>
+                    <small class="red">Needs attention</small>
+                </div>
+
+            </div>
+
+
+            <div class="chart-area">
+
+                <div class="chart-title">
+                    <strong>Employment Outcomes</strong>
+
+                    <select>
+                        <option>Last 12 Months</option>
+                        <option>Last 6 Months</option>
+                        <option>Last 3 Months</option>
+                    </select>
+                </div>
+
+                <div class="chart">
+
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                    <div class="bar bar4"></div>
+                    <div class="bar bar5"></div>
+                    <div class="bar bar6"></div>
+                    <div class="bar bar7"></div>
+                    <div class="bar bar8"></div>
+
+                </div>
+
+                <div class="months">
+                    <span>Jan</span>
+                    <span>Feb</span>
+                    <span>Mar</span>
+                    <span>Apr</span>
+                    <span>May</span>
+                    <span>Jun</span>
+                    <span>Jul</span>
+                    <span>Aug</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- PROBLEM SECTION -->
+
+    <section class="problem" id="about">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                THE CHALLENGE
+            </span>
+
+            <h2>
+                Training should not end with a certificate.
+            </h2>
+
+            <p>
+                Traditional skilling systems often track attendance,
+                assessments and certificates — but fail to track what
+                happens after training.
+            </p>
+
+        </div>
+
+
+        <div class="problem-grid">
+
+            <div class="problem-card">
+                <div class="problem-icon">📋</div>
+                <h3>Limited Tracking</h3>
+                <p>
+                    Employment outcomes are often difficult to
+                    track after a trainee completes a program.
+                </p>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-icon">🔗</div>
+                <h3>Disconnected Data</h3>
+                <p>
+                    Different programs may use different identifiers,
+                    making data comparison difficult.
+                </p>
+            </div>
+
+            <div class="problem-card">
+                <div class="problem-icon">🧩</div>
+                <h3>Hidden Skill Gaps</h3>
+                <p>
+                    Training programs may not always match the
+                    skills currently demanded by employers.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- SOLUTION -->
+
+    <section class="solution" id="features">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                OUR SOLUTION
+            </span>
+
+            <h2>
+                From training data to real-world impact.
+            </h2>
+
+            <p>
+                SkillTrack connects the complete journey of a trainee
+                and converts data into actionable insights.
+            </p>
+
+        </div>
+
+
+        <div class="journey">
+
+            <div class="journey-step">
+
+                <div class="step-number">01</div>
+
+                <div class="step-icon">🎓</div>
+
+                <h3>Training</h3>
+
+                <p>
+                    Track courses, attendance,
+                    assessments and certifications.
+                </p>
+
+            </div>
+
+
+            <div class="journey-line"></div>
+
+
+            <div class="journey-step">
+
+                <div class="step-number">02</div>
+
+                <div class="step-icon">💼</div>
+
+                <h3>Employment</h3>
+
+                <p>
+                    Track jobs, employment status,
+                    salary and career progression.
+                </p>
+
+            </div>
+
+
+            <div class="journey-line"></div>
+
+
+            <div class="journey-step">
+
+                <div class="step-number">03</div>
+
+                <div class="step-icon">🧠</div>
+
+                <h3>Skill Analysis</h3>
+
+                <p>
+                    Identify missing skills using
+                    data and AI-based analysis.
+                </p>
+
+            </div>
+
+
+            <div class="journey-line"></div>
+
+
+            <div class="journey-step">
+
+                <div class="step-number">04</div>
+
+                <div class="step-icon">📊</div>
+
+                <h3>Impact</h3>
+
+                <p>
+                    Help policymakers understand
+                    what training actually works.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                PLATFORM FEATURES
+            </span>
+
+            <h2>
+                Everything in one intelligent platform.
+            </h2>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <div class="feature-card">
+
+                <div class="feature-icon blue">
+                    👨‍🎓
+                </div>
+
+                <h3>Trainee Profile</h3>
+
+                <p>
+                    Maintain a complete skill, training and
+                    employment profile for every trainee.
+                </p>
+
+                <a href="#">Learn more →</a>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon green">
+                    💼
+                </div>
+
+                <h3>Employment Tracking</h3>
+
+                <p>
+                    Track employment status, company,
+                    job role, salary and career progression.
+                </p>
+
+                <a href="#">Learn more →</a>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon purple">
+                    🧠
+                </div>
+
+                <h3>AI Skill Gap Detection</h3>
+
+                <p>
+                    Compare trainee skills with industry
+                    requirements to identify skill gaps.
+                </p>
+
+                <a href="#">Learn more →</a>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon orange">
+                    📈
+                </div>
+
+                <h3>Impact Analytics</h3>
+
+                <p>
+                    Measure employment rates, salaries,
+                    retention and program effectiveness.
+                </p>
+
+                <a href="#">Learn more →</a>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon pink">
+                    🗺️
+                </div>
+
+                <h3>District Insights</h3>
+
+                <p>
+                    Compare skill and employment outcomes
+                    across different districts.
+                </p>
+
+                <a href="#">Learn more →</a>
+
+            </div>
+
+
+            <div class="feature-card">
+
+                <div class="feature-icon teal">
+                    🔐
+                </div>
+
+                <h3>Consent & Privacy</h3>
+
+                <p>
+                    Keep trainee information secure with
+                    consent-based and role-based access.
+                </p>
+
+                <a href="#">Learn more →</a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- AI SECTION -->
+
+    <section class="ai-section">
+
+        <div class="ai-content">
+
+            <span class="section-label">
+                AI-POWERED INSIGHTS
+            </span>
+
+            <h2>
+                Discover the skills
+                <span>tomorrow's jobs need.</span>
+            </h2>
+
+            <p>
+                SkillTrack compares trainee capabilities with
+                industry demand to identify the most important
+                skill gaps and recommend future training.
+            </p>
+
+
+            <div class="skill-analysis">
+
+                <div class="skill-row">
+
+                    <div class="skill-name">
+                        <span>Python</span>
+                        <strong>82%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-fill high"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-name">
+                        <span>SQL</span>
+                        <strong>45%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-fill medium"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-name">
+                        <span>Cloud Computing</span>
+                        <strong>28%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-fill low"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-row">
+
+                    <div class="skill-name">
+                        <span>React</span>
+                        <strong>22%</strong>
+                    </div>
+
+                    <div class="progress">
+                        <div class="progress-fill low"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="ai-card">
+
+            <div class="ai-card-top">
+
+                <span>🤖 AI Analysis</span>
+
+                <span class="ai-status">
+                    Analysis Complete
+                </span>
+
+            </div>
+
+            <h3>
+                Skill Gap Detected
+            </h3>
+
+            <p>
+                Industry demand indicates a strong need
+                for the following skills.
+            </p>
+
+
+            <div class="gap">
+
+                <div>
+                    <strong>SQL</strong>
+                    <span>High Priority</span>
+                </div>
+
+                <div class="gap-bar">
+                    <div></div>
+                </div>
+
+            </div>
+
+
+            <div class="gap">
+
+                <div>
+                    <strong>Cloud Computing</strong>
+                    <span>High Priority</span>
+                </div>
+
+                <div class="gap-bar">
+                    <div></div>
+                </div>
+
+            </div>
+
+
+            <div class="gap">
+
+                <div>
+                    <strong>React</strong>
+                    <span>Medium Priority</span>
+                </div>
+
+                <div class="gap-bar">
+                    <div></div>
+                </div>
+
+            </div>
+
+
+            <button class="recommend-btn">
+                View Training Recommendations →
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- IMPACT -->
+
+    <section class="impact" id="impact">
+
+        <div class="section-heading">
+
+            <span class="section-label">
+                MEASURE WHAT MATTERS
+            </span>
+
+            <h2>
+                Turn training data into decisions.
+            </h2>
+
+            <p>
+                Government and training providers can understand
+                where programs are succeeding and where they need improvement.
+            </p>
+
+        </div>
+
+
+        <div class="impact-grid">
+
+            <div class="impact-card">
+
+                <span>Employment Rate</span>
+
+                <strong>71.8%</strong>
+
+                <div class="mini-chart">
+                    ▁▂▃▄▅▆▇█
+                </div>
+
+                <small>↑ 8.2% this year</small>
+
+            </div>
+
+
+            <div class="impact-card">
+
+                <span>Average Salary</span>
+
+                <strong>₹18,750</strong>
+
+                <div class="mini-chart">
+                    ▁▂▃▃▄▅▆█
+                </div>
+
+                <small>↑ 6.5% this year</small>
+
+            </div>
+
+
+            <div class="impact-card">
+
+                <span>Employment Retention</span>
+
+                <strong>82.4%</strong>
+
+                <div class="mini-chart">
+                    ▁▃▃▄▅▆▆█
+                </div>
+
+                <small>After 12 months</small>
+
+            </div>
+
+
+            <div class="impact-card">
+
+                <span>Skill Gaps Identified</span>
+
+                <strong>24</strong>
+
+                <div class="mini-chart">
+                    █▇▆▅▄▃▂▁
+                </div>
+
+                <small>Across 18 programs</small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CTA -->
+
+    <section class="cta">
+
+        <div>
+
+            <span class="section-label">
+                BUILDING A BETTER FUTURE
+            </span>
+
+            <h2>
+                Let's make every training
+                program count.
+            </h2>
+
+            <p>
+                Connect skills, employment and policy
+                through intelligent data.
+            </p>
+
+        </div>
+
+        <button class="primary-btn" onclick="startTracking()">
+            Get Started →
+        </button>
+
+    </section>
+
+
+
+    <!-- FOOTER -->
+
+    <footer id="contact">
+
+        <div class="footer-main">
+
+            <div class="footer-brand">
+
+                <div class="logo">
+
+                    <div class="logo-icon">
+                        ST
+                    </div>
+
+                    <div>
+                        <h2>SkillTrack</h2>
+                        <span>Maharashtra</span>
+                    </div>
+
+                </div>
+
+                <p>
+                    AI-powered skill and employment
+                    outcome intelligence platform.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Platform</h4>
+
+                <a href="#">Trainee Portal</a>
+                <a href="#">Government Dashboard</a>
+                <a href="#">Analytics</a>
+                <a href="#">Skill Assessment</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Resources</h4>
+
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="#impact">Impact</a>
+                <a href="#">Documentation</a>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h4>Contact</h4>
+
+                <a href="#">Government Partners</a>
+                <a href="#">Support</a>
+                <a href="#">Feedback</a>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <span>
+                © 2026 SkillTrack Maharashtra
+            </span>
+
+            <span>
+                Smart India Hackathon 2026
+            </span>
+
+        </div>
+
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

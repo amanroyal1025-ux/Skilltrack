@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | SkillTrack Maharashtra</title>
+
+    <link rel="stylesheet" href="login.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body>
+
+
+    <!-- BACKGROUND -->
+
+    <div class="background-circle circle-one"></div>
+
+    <div class="background-circle circle-two"></div>
+
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-icon">
+                ST
+            </div>
+
+            <div class="logo-text">
+
+                <strong>SkillTrack</strong>
+
+                <span>Maharashtra</span>
+
+            </div>
+
+        </a>
+
+
+        <a href="index.html" class="back-home">
+            ← Back to Home
+        </a>
+
+    </header>
+
+
+
+    <!-- LOGIN SECTION -->
+
+    <main class="login-section">
+
+
+        <div class="login-heading">
+
+            <div class="welcome-badge">
+                SkillTrack Maharashtra
+            </div>
+
+            <h1>
+                Welcome to
+                <span>SkillTrack</span>
+            </h1>
+
+            <p>
+                Choose your portal to continue
+                to the Skill & Employment platform.
+            </p>
+
+        </div>
+
+
+
+        <!-- ROLE CARDS -->
+
+        <div class="role-container">
+
+
+            <!-- TRAINEE -->
+
+            <div class="role-card trainee-card">
+
+                <div class="role-icon">
+                    👨‍🎓
+                </div>
+
+                <div class="role-content">
+
+                    <h2>Trainee</h2>
+
+                    <p>
+                        Track your training, skills,
+                        employment and career progress.
+                    </p>
+
+                    <ul>
+
+                        <li>✓ View training history</li>
+
+                        <li>✓ Update employment</li>
+
+                        <li>✓ Check skill gaps</li>
+
+                        <li>✓ Get training recommendations</li>
+
+                    </ul>
+
+                    <button onclick="openTrainee()">
+                        Continue as Trainee
+                        <span>→</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- GOVERNMENT -->
+
+            <div class="role-card government-card">
+
+                <div class="role-icon">
+                    🏛️
+                </div>
+
+                <div class="role-content">
+
+                    <h2>Government</h2>
+
+                    <p>
+                        Monitor skilling outcomes and
+                        analyze employment impact.
+                    </p>
+
+                    <ul>
+
+                        <li>✓ Employment analytics</li>
+
+                        <li>✓ District insights</li>
+
+                        <li>✓ Course performance</li>
+
+                        <li>✓ Skill gap analysis</li>
+
+                    </ul>
+
+                    <button onclick="openGovernment()">
+                        Continue as Government
+                        <span>→</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- TRAINING PROVIDER -->
+
+            <div class="role-card provider-card">
+
+                <div class="role-icon">
+                    🏫
+                </div>
+
+                <div class="role-content">
+
+                    <h2>Training Provider</h2>
+
+                    <p>
+                        Manage trainees and measure
+                        training program outcomes.
+                    </p>
+
+                    <ul>
+
+                        <li>✓ Manage trainees</li>
+
+                        <li>✓ Track completion</li>
+
+                        <li>✓ Monitor placements</li>
+
+                        <li>✓ View performance</li>
+
+                    </ul>
+
+                    <button onclick="openProvider()">
+                        Continue as Provider
+                        <span>→</span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- SECURITY MESSAGE -->
+
+        <div class="security-message">
+
+            🔐 Your information is protected with
+            consent-based and secure access.
+
+        </div>
+
+
+    </main>
+
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <span>
+            © 2026 SkillTrack Maharashtra
+        </span>
+
+        <span>
+            Smart India Hackathon 2026
+        </span>
+
+    </footer>
+
+
+
+    <script>
+
+        function openTrainee() {
+
+            alert(
+                "Trainee Portal\n\n" +
+                "Your trainee dashboard will be connected here."
+            );
+
+        }
+
+
+        function openGovernment() {
+
+            alert(
+                "Government Portal\n\n" +
+                "Government analytics dashboard will be connected here."
+            );
+
+        }
+
+
+        function openProvider() {
+
+            alert(
+                "Training Provider Portal\n\n" +
+                "Training provider dashboard will be connected here."
+            );
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>

@@ -83,6 +83,12 @@ nav a:hover {
     color: white;
     font-weight: 600;
     cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.login-btn:hover {
+    background: #2563eb;
 }
 
 .login-btn:hover {

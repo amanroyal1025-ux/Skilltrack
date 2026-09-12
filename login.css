@@ -1,0 +1,543 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+
+    font-family: "Inter", sans-serif;
+
+    min-height: 100vh;
+
+    background: #f8fafc;
+
+    color: #172033;
+
+    position: relative;
+
+    overflow-x: hidden;
+
+}
+
+
+/* BACKGROUND */
+
+.background-circle {
+
+    position: fixed;
+
+    border-radius: 50%;
+
+    filter: blur(1px);
+
+    pointer-events: none;
+
+    z-index: -1;
+
+}
+
+
+.circle-one {
+
+    width: 500px;
+
+    height: 500px;
+
+    background: #dbeafe;
+
+    opacity: 0.5;
+
+    top: -250px;
+
+    left: -200px;
+
+}
+
+
+.circle-two {
+
+    width: 450px;
+
+    height: 450px;
+
+    background: #ede9fe;
+
+    opacity: 0.5;
+
+    bottom: -220px;
+
+    right: -180px;
+
+}
+
+
+/* NAVBAR */
+
+.navbar {
+
+    height: 78px;
+
+    padding: 0 7%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background: rgba(255, 255, 255, 0.9);
+
+    border-bottom: 1px solid #e8edf3;
+
+}
+
+
+.logo {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: #172033;
+
+}
+
+
+.logo-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    border-radius: 11px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    color: white;
+
+    font-weight: 800;
+
+    background: linear-gradient(135deg, #2563eb, #7c3aed);
+
+}
+
+
+.logo-text {
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+.logo-text strong {
+
+    font-size: 19px;
+
+}
+
+
+.logo-text span {
+
+    font-size: 10px;
+
+    color: #64748b;
+
+}
+
+
+.back-home {
+
+    text-decoration: none;
+
+    color: #475569;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+}
+
+
+.back-home:hover {
+
+    color: #2563eb;
+
+}
+
+
+/* MAIN */
+
+.login-section {
+
+    padding: 70px 7% 50px;
+
+    max-width: 1250px;
+
+    margin: auto;
+
+}
+
+
+/* HEADING */
+
+.login-heading {
+
+    text-align: center;
+
+    max-width: 650px;
+
+    margin: 0 auto 50px;
+
+}
+
+
+.welcome-badge {
+
+    display: inline-block;
+
+    padding: 7px 15px;
+
+    background: #eef2ff;
+
+    color: #4f46e5;
+
+    border-radius: 30px;
+
+    font-size: 11px;
+
+    font-weight: 700;
+
+    margin-bottom: 18px;
+
+}
+
+
+.login-heading h1 {
+
+    font-size: 46px;
+
+    line-height: 1.15;
+
+    letter-spacing: -1.5px;
+
+    margin-bottom: 15px;
+
+}
+
+
+.login-heading h1 span {
+
+    color: #2563eb;
+
+}
+
+
+.login-heading p {
+
+    color: #64748b;
+
+    font-size: 15px;
+
+}
+
+
+/* ROLE CARDS */
+
+.role-container {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+
+}
+
+
+.role-card {
+
+    background: white;
+
+    border: 1px solid #e2e8f0;
+
+    border-radius: 18px;
+
+    padding: 30px;
+
+    transition: 0.3s;
+
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
+
+}
+
+
+.role-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow: 0 20px 45px rgba(15, 23, 42, 0.1);
+
+}
+
+
+.role-icon {
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 15px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    font-size: 28px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.trainee-card .role-icon {
+
+    background: #dbeafe;
+
+}
+
+
+.government-card .role-icon {
+
+    background: #ede9fe;
+
+}
+
+
+.provider-card .role-icon {
+
+    background: #dcfce7;
+
+}
+
+
+.role-content h2 {
+
+    font-size: 22px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.role-content > p {
+
+    color: #64748b;
+
+    font-size: 13px;
+
+    min-height: 60px;
+
+    margin-bottom: 18px;
+
+}
+
+
+.role-content ul {
+
+    list-style: none;
+
+    margin-bottom: 25px;
+
+}
+
+
+.role-content li {
+
+    font-size: 12px;
+
+    color: #475569;
+
+    margin-bottom: 9px;
+
+}
+
+
+.role-content button {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    color: white;
+
+    font-size: 12px;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.trainee-card button {
+
+    background: #2563eb;
+
+}
+
+
+.government-card button {
+
+    background: #6d28d9;
+
+}
+
+
+.provider-card button {
+
+    background: #16a34a;
+
+}
+
+
+.role-content button:hover {
+
+    opacity: 0.9;
+
+}
+
+
+.role-content button span {
+
+    font-size: 17px;
+
+}
+
+
+/* SECURITY */
+
+.security-message {
+
+    text-align: center;
+
+    margin-top: 35px;
+
+    color: #64748b;
+
+    font-size: 11px;
+
+}
+
+
+/* FOOTER */
+
+footer {
+
+    border-top: 1px solid #e2e8f0;
+
+    padding: 22px 7%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    color: #94a3b8;
+
+    font-size: 10px;
+
+    background: white;
+
+}
+
+
+/* TABLET */
+
+@media (max-width: 900px) {
+
+    .role-container {
+
+        grid-template-columns: 1fr;
+
+        max-width: 600px;
+
+        margin: auto;
+
+    }
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .navbar {
+
+        padding: 0 5%;
+
+    }
+
+
+    .back-home {
+
+        font-size: 11px;
+
+    }
+
+
+    .login-section {
+
+        padding: 50px 5% 40px;
+
+    }
+
+
+    .login-heading h1 {
+
+        font-size: 36px;
+
+    }
+
+
+    .role-card {
+
+        padding: 25px;
+
+    }
+
+
+    footer {
+
+        flex-direction: column;
+
+        gap: 8px;
+
+        text-align: center;
+
+    }
+
+}

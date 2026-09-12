@@ -279,25 +279,174 @@
 
     <script>
 
-        function selectAnswer(button) {
+    let currentQuestion = 0;
+    let score = 0;
+    let selectedAnswer = "";
 
-            let buttons = document.querySelectorAll(".options button");
+    const questions = [
 
-            buttons.forEach(function(btn) {
-                btn.classList.remove("selected");
-            });
+    {
+        question: "Which HTML tag is used to create a hyperlink?",
+        options: ["<link>", "<a>", "<href>", "<url>"],
+        answer: "<a>"
+    },
 
-            button.classList.add("selected");
-        }
+    {
+        question: "Which language is mainly used to add interactivity to a web page?",
+        options: ["HTML", "CSS", "JavaScript", "SQL"],
+        answer: "JavaScript"
+    },
+
+    {
+        question: "Which language is commonly used for data analysis and AI?",
+        options: ["Python", "HTML", "CSS", "XML"],
+        answer: "Python"
+    },
+
+    {
+        question: "Which SQL command is used to retrieve data from a table?",
+        options: ["INSERT", "SELECT", "DELETE", "UPDATE"],
+        answer: "SELECT"
+    },
+
+    {
+        question: "Which technology is used to style an HTML webpage?",
+        options: ["Python", "CSS", "SQL", "Java"],
+        answer: "CSS"
+    }
+
+];
 
 
-        function nextQuestion() {
+function loadQuestion() {
 
-            alert("Next question will be loaded here.");
+    let question = questions[currentQuestion];
 
-        }
+    document.querySelector(".assessment-card h2").innerText =
+        question.question;
 
-    </script>
+    let buttons = document.querySelectorAll(".options button");
+
+    buttons.forEach(function(button, index) {
+
+        button.innerText = question.options[index];
+
+        button.classList.remove("selected");
+
+    });
+
+    document.querySelector(".question-header span:first-child").innerText =
+        "Question " + (currentQuestion + 1) + " of " + questions.length;
+
+    document.querySelector(".question-header span:last-child").innerText =
+        ((currentQuestion + 1) * 20) + "%";
+
+    document.querySelector(".progress-bar").style.width =
+        ((currentQuestion + 1) * 20) + "%";
+
+    selectedAnswer = "";
+
+}
+
+
+function selectAnswer(button) {
+
+    let buttons = document.querySelectorAll(".options button");
+
+    buttons.forEach(function(btn) {
+
+        btn.classList.remove("selected");
+
+    });
+
+    button.classList.add("selected");
+
+    selectedAnswer = button.innerText;
+
+}
+
+
+function nextQuestion() {
+
+    if (selectedAnswer === "") {
+
+        alert("Please select an answer.");
+
+        return;
+
+    }
+
+
+    if (selectedAnswer === questions[currentQuestion].answer) {
+
+        score++;
+
+    }
+
+
+    currentQuestion++;
+
+
+    if (currentQuestion < questions.length) {
+
+        loadQuestion();
+
+    } else {
+
+        showResult();
+
+    }
+
+}
+
+
+function showResult() {
+
+    let percentage = (score / questions.length) * 100;
+
+    document.querySelector(".assessment-card").innerHTML = `
+
+        <div class="result">
+
+            <span class="card-label">
+                ASSESSMENT COMPLETED
+            </span>
+
+            <h2>Your Skill Assessment Result</h2>
+
+            <div class="score">
+                ${percentage}%
+            </div>
+
+            <p>
+                You answered ${score} out of ${questions.length}
+                questions correctly.
+            </p>
+
+            <h3>
+                ${
+                    percentage >= 80
+                    ? "Excellent Skill Level 🚀"
+                    : percentage >= 60
+                    ? "Good Skill Level 👍"
+                    : "Needs Improvement 📚"
+                }
+            </h3>
+
+            <button class="next-btn" onclick="location.reload()">
+                Take Assessment Again
+            </button>
+
+        </div>
+
+    `;
+
+}
+
+
+loadQuestion();
+
+</script>
 
 </body>
 

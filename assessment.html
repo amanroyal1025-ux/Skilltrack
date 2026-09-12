@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skill Assessment | SkillTrack Maharashtra</title>
+
+    <link rel="stylesheet" href="assessment.css">
+</head>
+
+<body>
+
+    <!-- SIDEBAR -->
+
+    <aside class="sidebar">
+
+        <a href="index.html" class="logo">
+            <div class="logo-icon">
+                ST
+            </div>
+
+            <div class="logo-text">
+                <strong>SkillTrack</strong>
+                <span>Maharashtra</span>
+            </div>
+        </a>
+
+
+        <div class="profile-mini">
+
+            <div class="profile-photo">
+                A
+            </div>
+
+            <div>
+                <strong>Aman</strong>
+                <span>Trainee</span>
+            </div>
+
+        </div>
+
+
+        <nav class="sidebar-nav">
+
+            <a href="trainee.html">
+                <span>▦</span>
+                Dashboard
+            </a>
+
+            <a href="#">
+                <span>👤</span>
+                My Profile
+            </a>
+
+            <a href="#">
+                <span>🎓</span>
+                Training
+            </a>
+
+            <a href="employment.html">
+                <span>💼</span>
+                Employment
+            </a>
+
+            <a href="#">
+                <span>🧠</span>
+                My Skills
+            </a>
+
+            <a href="assessment.html" class="active">
+                <span>📋</span>
+                Assessment
+            </a>
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+            <a href="index.html">
+                <span>↩</span>
+                Logout
+            </a>
+
+        </div>
+
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+
+                <span class="page-label">
+                    TRAINEE PORTAL
+                </span>
+
+                <h1>
+                    Skill Assessment
+                </h1>
+
+            </div>
+
+
+            <div class="top-actions">
+
+                <button class="notification">
+                    🔔
+                </button>
+
+                <div class="user-menu">
+
+                    <div class="user-avatar">
+                        A
+                    </div>
+
+                    <div>
+                        <strong>Aman</strong>
+                        <small>Trainee</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- INTRO -->
+
+        <section class="intro-card">
+
+            <div>
+
+                <span class="card-label">
+                    SKILL EVALUATION
+                </span>
+
+                <h2>
+                    Assess Your Skills
+                </h2>
+
+                <p>
+                    Complete the assessment to measure your current
+                    technical skills and identify areas for improvement.
+                </p>
+
+            </div>
+
+            <div class="assessment-icon">
+                🧠
+            </div>
+
+        </section>
+
+
+        <!-- ASSESSMENT -->
+
+        <section class="assessment-card">
+
+            <div class="question-header">
+
+                <span>
+                    Question 1 of 5
+                </span>
+
+                <span>
+                    20%
+                </span>
+
+            </div>
+
+
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+
+
+            <h2>
+                Which HTML tag is used to create a hyperlink?
+            </h2>
+
+
+            <div class="options">
+
+                <button onclick="selectAnswer(this)">
+                    &lt;link&gt;
+                </button>
+
+                <button onclick="selectAnswer(this)">
+                    &lt;a&gt;
+                </button>
+
+                <button onclick="selectAnswer(this)">
+                    &lt;href&gt;
+                </button>
+
+                <button onclick="selectAnswer(this)">
+                    &lt;url&gt;
+                </button>
+
+            </div>
+
+
+            <div class="assessment-footer">
+
+                <span>
+                    Select one answer
+                </span>
+
+                <button class="next-btn" onclick="nextQuestion()">
+                    Next Question →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- SKILL AREAS -->
+
+        <section class="skill-section">
+
+            <div class="section-heading">
+
+                <div>
+
+                    <span class="card-label">
+                        ASSESSMENT AREAS
+                    </span>
+
+                    <h2>
+                        Skills Being Evaluated
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <div class="skill-grid">
+
+                <div class="skill-box">
+                    <span>🌐</span>
+                    <strong>HTML & CSS</strong>
+                    <small>Web Development</small>
+                </div>
+
+                <div class="skill-box">
+                    <span>⚡</span>
+                    <strong>JavaScript</strong>
+                    <small>Programming</small>
+                </div>
+
+                <div class="skill-box">
+                    <span>🐍</span>
+                    <strong>Python</strong>
+                    <small>Programming</small>
+                </div>
+
+                <div class="skill-box">
+                    <span>🗄️</span>
+                    <strong>SQL</strong>
+                    <small>Database</small>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script>
+
+        function selectAnswer(button) {
+
+            let buttons = document.querySelectorAll(".options button");
+
+            buttons.forEach(function(btn) {
+                btn.classList.remove("selected");
+            });
+
+            button.classList.add("selected");
+        }
+
+
+        function nextQuestion() {
+
+            alert("Next question will be loaded here.");
+
+        }
+
+    </script>
+
+</body>
+
+</html>

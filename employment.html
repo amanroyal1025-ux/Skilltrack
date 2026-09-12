@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Employment | SkillTrack Maharashtra</title>
+
+    <link rel="stylesheet" href="employment.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <h2>SkillTrack</h2>
+            <span>Maharashtra</span>
+        </div>
+
+        <div class="profile">
+            <div class="profile-icon">A</div>
+            <div>
+                <h3>Aman</h3>
+                <p>Trainee</p>
+            </div>
+        </div>
+
+        <nav>
+            <a href="trainee.html">Dashboard</a>
+            <a href="#">My Profile</a>
+            <a href="#">Training</a>
+            <a href="employment.html" class="active">Employment</a>
+            <a href="#">My Skills</a>
+            <a href="#">Assessment</a>
+        </nav>
+
+        <a href="login.html" class="logout">Logout</a>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <p>TRAINEE PORTAL</p>
+                <h1>Employment</h1>
+            </div>
+
+            <div class="user">
+                🔔 &nbsp; 👤 Aman
+            </div>
+        </header>
+
+
+        <!-- Employment Status -->
+        <section class="status-card">
+
+            <div>
+                <p class="label">CURRENT EMPLOYMENT STATUS</p>
+
+                <h2>✓ Employed</h2>
+
+                <p>
+                    Your employment information has been successfully recorded.
+                </p>
+            </div>
+
+            <div class="verified">
+                ✓ Verified
+            </div>
+
+        </section>
+
+
+        <!-- Employment Details -->
+        <section class="card">
+
+            <div class="card-header">
+                <div>
+                    <h2>Employment Details</h2>
+                    <p>Information about your current employment.</p>
+                </div>
+
+                <span class="verified">Verified</span>
+            </div>
+
+
+            <div class="details-grid">
+
+                <div class="detail">
+                    <label>Company Name</label>
+                    <p>ABC Technologies</p>
+                </div>
+
+                <div class="detail">
+                    <label>Job Role</label>
+                    <p>Junior Developer</p>
+                </div>
+
+                <div class="detail">
+                    <label>Monthly Salary</label>
+                    <p>₹22,000</p>
+                </div>
+
+                <div class="detail">
+                    <label>Joining Date</label>
+                    <p>15 January 2026</p>
+                </div>
+
+                <div class="detail">
+                    <label>Employment Type</label>
+                    <p>Full Time</p>
+                </div>
+
+                <div class="detail">
+                    <label>Work Location</label>
+                    <p>Pune, Maharashtra</p>
+                </div>
+
+            </div>
+
+            <button class="update-btn" onclick="showMessage()">
+                Update Employment Details
+            </button>
+
+            <p id="message"></p>
+
+        </section>
+
+
+        <!-- Employment Journey -->
+        <section class="card">
+
+            <h2>Employment Journey</h2>
+
+            <div class="journey">
+
+                <div class="journey-item completed">
+                    <div class="circle">✓</div>
+
+                    <div>
+                        <h3>Training Completed</h3>
+                        <p>Full Stack Development</p>
+                    </div>
+                </div>
+
+
+                <div class="journey-item completed">
+                    <div class="circle">✓</div>
+
+                    <div>
+                        <h3>Certificate Earned</h3>
+                        <p>Successfully completed training</p>
+                    </div>
+                </div>
+
+
+                <div class="journey-item completed">
+                    <div class="circle">✓</div>
+
+                    <div>
+                        <h3>Employment Started</h3>
+                        <p>Junior Developer at ABC Technologies</p>
+                    </div>
+                </div>
+
+
+                <div class="journey-item">
+                    <div class="circle">4</div>
+
+                    <div>
+                        <h3>Career Progression</h3>
+                        <p>Future salary and role progression will be tracked here.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script>
+        function showMessage() {
+            document.getElementById("message").innerText =
+                "Employment update form will be connected here.";
+        }
+    </script>
+
+</body>
+</html>

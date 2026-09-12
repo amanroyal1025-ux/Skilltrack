@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    width: 245px;
+    height: 100vh;
+    background: #ffffff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 25px 18px;
+    border-right: 1px solid #e5e7eb;
+}
+
+.logo h2 {
+    font-size: 24px;
+    margin-bottom: 3px;
+}
+
+.logo span {
+    font-size: 13px;
+    color: #64748b;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 35px 5px;
+}
+
+.profile-icon {
+    width: 42px;
+    height: 42px;
+    background: #2563eb;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.profile h3 {
+    font-size: 15px;
+}
+
+.profile p {
+    font-size: 12px;
+    color: #64748b;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #475569;
+    padding: 12px 14px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+nav a:hover,
+nav a.active {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+.logout {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+    text-decoration: none;
+    color: #ef4444;
+}
+
+
+/* Main */
+
+.main {
+    margin-left: 245px;
+    padding: 30px 40px;
+}
+
+
+/* Topbar */
+
+.topbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.topbar p {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 5px;
+}
+
+.topbar h1 {
+    font-size: 28px;
+}
+
+.user {
+    color: #475569;
+}
+
+
+/* Status */
+
+.status-card {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    border: 1px solid #e5e7eb;
+}
+
+.label {
+    font-size: 12px;
+    color: #64748b;
+    margin-bottom: 8px;
+}
+
+.status-card h2 {
+    color: #16a34a;
+    margin-bottom: 6px;
+}
+
+.status-card p {
+    color: #64748b;
+}
+
+.verified {
+    color: #16a34a;
+    background: #f0fdf4;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+
+/* Cards */
+
+.card {
+    background: #ffffff;
+    padding: 28px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+    border: 1px solid #e5e7eb;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.card h2 {
+    margin-bottom: 5px;
+}
+
+.card-header p {
+    color: #64748b;
+}
+
+
+/* Details */
+
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.detail {
+    padding: 15px;
+    background: #f8fafc;
+    border-radius: 8px;
+}
+
+.detail label {
+    display: block;
+    color: #64748b;
+    font-size: 13px;
+    margin-bottom: 7px;
+}
+
+.detail p {
+    font-weight: bold;
+}
+
+
+/* Button */
+
+.update-btn {
+    margin-top: 25px;
+    padding: 12px 20px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.update-btn:hover {
+    background: #1d4ed8;
+}
+
+#message {
+    margin-top: 12px;
+    color: #2563eb;
+}
+
+
+/* Journey */
+
+.journey {
+    margin-top: 25px;
+}
+
+.journey-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.circle {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background: #e2e8f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.completed .circle {
+    background: #dcfce7;
+    color: #16a34a;
+    font-weight: bold;
+}
+
+.journey-item h3 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.journey-item p {
+    color: #64748b;
+    font-size: 13px;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .logout {
+        position: static;
+        display: block;
+        margin-top: 20px;
+    }
+
+    .main {
+        margin-left: 0;
+        padding: 20px;
+    }
+
+    .details-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+}
